@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>待辦清單</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="card">
+    <h1>待辦清單</h1>
+
+    <!-- 新增待辦事項的表單 -->
+    <form id="todo-form" class="todo-form">
+      <input
+        type="text"
+        id="todo-input"
+        class="todo-input"
+        placeholder="輸入待辦事項..."
+        autocomplete="off"
+      />
+      <button type="submit" class="add-btn">新增</button>
+    </form>
+
+    <!-- 待辦事項清單 -->
+    <ul id="todo-list" class="todo-list"></ul>
+
+    <!-- 清單為空時顯示的提示文字 -->
+    <p id="empty-hint" class="empty-hint">還沒有任何待辦事項,新增一個吧!</p>
+
+    <!-- 底部顯示未完成數量 -->
+    <div class="footer">
+      <span id="remaining-count">未完成:0 項</span>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
